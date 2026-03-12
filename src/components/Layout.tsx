@@ -2,17 +2,22 @@ import React from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
 export default function Layout() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const location = useLocation();
   const currentPath = location.pathname;
 
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <div className="min-h-screen flex flex-col">
-      <nav className="fixed top-6 left-4 right-4 z-50 flex justify-center pointer-events-none">
-        <div className="glass rounded-full px-6 py-3 flex items-center justify-between w-full max-w-5xl shadow-2xl pointer-events-auto border border-white/10">
-          <Link to="/" className="flex items-center gap-1.5 shrink-0">
+      <nav className="fixed top-6 left-4 right-4 z-[100] flex justify-center pointer-events-none">
+        <div className="glass rounded-full px-6 py-3 flex items-center justify-between w-full max-w-5xl shadow-2xl pointer-events-auto border border-white/10 relative">
+          <Link to="/" className="flex items-center gap-1.5 shrink-0" onClick={closeMenu}>
             <span className="text-xl md:text-2xl font-black tracking-tighter text-white">CYST</span>
             <span className="text-xl md:text-2xl font-black tracking-tighter text-gradient">APEX</span>
           </Link>
+
           <div className="hidden lg:flex items-center gap-8 px-4">
             <Link to="/" className={`text-sm font-bold transition-colors ${currentPath === '/' ? 'text-primary flex items-center gap-1' : 'text-slate-400 hover:text-white flex items-center gap-1'}`}><span className="material-symbols-outlined text-[18px]">home</span>Home</Link>
             <Link to="/services" className={`text-sm font-bold transition-colors ${currentPath === '/services' ? 'text-primary' : 'text-slate-400 hover:text-white'}`}>Services</Link>
@@ -20,9 +25,52 @@ export default function Layout() {
             <Link to="/results" className={`text-sm font-bold transition-colors ${currentPath === '/results' ? 'text-primary' : 'text-slate-400 hover:text-white'}`}>Results</Link>
             <Link to="/contact" className={`text-sm font-bold transition-colors ${currentPath === '/contact' ? 'text-primary' : 'text-slate-400 hover:text-white'}`}>Contact</Link>
           </div>
-          <Link to="/book-free-call" className="bg-gradient-to-r from-primary to-sea-blue shrink-0 px-6 py-3 rounded-full text-xs font-bold text-white shadow-lg shadow-primary/25 hover:opacity-90 transition-transform hover:scale-105 active:scale-95 uppercase tracking-wider border border-white/10">
-            Book Free Call
-          </Link>
+
+          <div className="flex items-center gap-4 shrink-0">
+            <Link to="/book-free-call" className="hidden sm:block bg-gradient-to-r from-primary to-sea-blue px-6 py-3 rounded-full text-xs font-bold text-white shadow-lg shadow-primary/25 hover:opacity-90 transition-transform hover:scale-105 active:scale-95 uppercase tracking-wider border border-white/10">
+              Book Free Call
+            </Link>
+
+            <button
+              onClick={toggleMenu}
+              className="lg:hidden flex items-center justify-center p-2 text-white bg-white/5 rounded-full border border-white/10"
+              aria-label="Toggle menu"
+            >
+              <span className="material-symbols-outlined">
+                {isMenuOpen ? 'close' : 'menu'}
+              </span>
+            </button>
+          </div>
+
+          {/* Mobile Menu Dropdown */}
+          <div className={`absolute top-full left-0 right-0 mt-4 mx-0 lg:hidden transition-all duration-300 origin-top overflow-hidden ${isMenuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'}`}>
+            <div className="glass rounded-3xl p-6 border border-white/10 shadow-2xl flex flex-col gap-4">
+              <Link to="/" onClick={closeMenu} className={`flex items-center gap-3 p-4 rounded-xl transition-colors ${currentPath === '/' ? 'bg-primary/20 text-primary' : 'text-slate-300 hover:bg-white/5'}`}>
+                <span className="material-symbols-outlined">home</span>
+                <span className="font-bold">Home</span>
+              </Link>
+              <Link to="/services" onClick={closeMenu} className={`flex items-center gap-3 p-4 rounded-xl transition-colors ${currentPath === '/services' ? 'bg-primary/20 text-primary' : 'text-slate-300 hover:bg-white/5'}`}>
+                <span className="material-symbols-outlined">bolt</span>
+                <span className="font-bold">Services</span>
+              </Link>
+              <Link to="/about" onClick={closeMenu} className={`flex items-center gap-3 p-4 rounded-xl transition-colors ${currentPath === '/about' ? 'bg-primary/20 text-primary' : 'text-slate-300 hover:bg-white/5'}`}>
+                <span className="material-symbols-outlined">info</span>
+                <span className="font-bold">About Us</span>
+              </Link>
+              <Link to="/results" onClick={closeMenu} className={`flex items-center gap-3 p-4 rounded-xl transition-colors ${currentPath === '/results' ? 'bg-primary/20 text-primary' : 'text-slate-300 hover:bg-white/5'}`}>
+                <span className="material-symbols-outlined">monitoring</span>
+                <span className="font-bold">Results</span>
+              </Link>
+              <Link to="/contact" onClick={closeMenu} className={`flex items-center gap-3 p-4 rounded-xl transition-colors ${currentPath === '/contact' ? 'bg-primary/20 text-primary' : 'text-slate-300 hover:bg-white/5'}`}>
+                <span className="material-symbols-outlined">mail</span>
+                <span className="font-bold">Contact</span>
+              </Link>
+              <hr className="border-white/10 my-2 sm:hidden" />
+              <Link to="/book-free-call" onClick={closeMenu} className="sm:hidden bg-gradient-to-r from-primary to-sea-blue p-4 rounded-xl text-center font-black uppercase tracking-widest text-white shadow-lg shadow-primary/25">
+                Book Free Call
+              </Link>
+            </div>
+          </div>
         </div>
       </nav>
 
