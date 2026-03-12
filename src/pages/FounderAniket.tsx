@@ -9,11 +9,11 @@ export default function FounderAniket() {
       }}>
         <div className="max-w-[1400px] mx-auto relative z-10 text-center">
           <span className="inline-block px-4 py-1.5 bg-white/5 backdrop-blur-md text-[#10B981] text-[10px] font-black uppercase tracking-[0.4em] rounded-full border border-white/10 mb-8">Co-founder & Tech Architect</span>
-          <h1 className="text-7xl md:text-[140px] font-extrabold leading-[0.85] tracking-tighter text-white mb-12">
-            ANIKET<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0D7377] to-[#22D3EE]">SINGH</span>
+          <h1 className="text-5xl md:text-[140px] font-extrabold leading-[1.1] md:leading-[0.85] tracking-tighter text-white mb-12">
+            ANIKET<br className="md:hidden" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0D7377] to-[#22D3EE]"> SINGH</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-xl md:text-2xl text-slate-400 font-light leading-relaxed">
+          <p className="max-w-2xl mx-auto text-lg md:text-2xl text-slate-400 font-light leading-relaxed px-4">
             Engineering the proprietary systems and scalable infrastructure behind CYST APEX's dominant growth engine. Specializing in advanced data pipelines, predictive modelling, and high-availability architecture.
           </p>
         </div>
