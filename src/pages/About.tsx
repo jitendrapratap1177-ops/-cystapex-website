@@ -176,39 +176,42 @@ export default function About() {
             {/* Aniket Singh */}
             <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#10B981]/20 to-transparent hover:from-[#10B981]/40 transition-all duration-500">
               <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
-                <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
+                <div className="min-h-[400px] lg:aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
                   <span className="inline-block self-start bg-[#10B981]/20 text-[#10B981] border border-[#10B981]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">TECH MASTER</span>
                   <h4 className="text-3xl lg:text-4xl font-black text-white mb-6">Aniket Singh</h4>
                   <p className="text-slate-300 text-base lg:text-lg font-medium leading-relaxed mb-10 text-left">Chief Architect of the proprietary CYST growth engine, specializing in scalable infrastructure and advanced data algorithms.</p>
-                  <Link to="/about/aniket-singh" className="mt-auto group/link flex items-center gap-2 text-[10px] font-black text-[#10B981] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
+                  <Link to="/about/aniket-singh" className="mt-auto group/link flex items-center gap-2 text-xs font-black text-[#10B981] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
                     LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
                   </Link>
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#10B981]/10 blur-3xl rounded-full -z-10"></div>
                 </div>
               </div>
             </div>
             {/* Shantanu Singh */}
             <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#1E90D4]/20 to-transparent hover:from-[#1E90D4]/40 transition-all duration-500">
               <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
-                <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
+                <div className="min-h-[400px] lg:aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
                   <span className="inline-block self-start bg-[#1E90D4]/20 text-[#1E90D4] border border-[#1E90D4]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">SALES EXPERT</span>
                   <h4 className="text-3xl lg:text-4xl font-black text-white mb-6">Shantanu Singh</h4>
                   <p className="text-slate-300 text-base lg:text-lg font-medium leading-relaxed mb-10 text-left">Leader of high-ticket acquisition and strategic market expansion, driving revenue velocity through psychological sales engineering.</p>
-                  <Link to="/about/shantanu-singh" className="mt-auto group/link flex items-center gap-2 text-[10px] font-black text-[#1E90D4] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
+                  <Link to="/about/shantanu-singh" className="mt-auto group/link flex items-center gap-2 text-xs font-black text-[#1E90D4] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
                     LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
                   </Link>
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#1E90D4]/10 blur-3xl rounded-full -z-10"></div>
                 </div>
               </div>
             </div>
             {/* Akhand Pratap Singh */}
             <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#7c3bed]/20 to-transparent hover:from-[#7c3bed]/40 transition-all duration-500">
               <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
-                <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
+                <div className="min-h-[400px] lg:aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
                   <span className="inline-block self-start bg-[#7c3bed]/20 text-[#7c3bed] border border-[#7c3bed]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">CLIENT MANAGEMENT</span>
                   <h4 className="text-3xl lg:text-4xl font-black text-white mb-6">Akhand Pratap Singh</h4>
                   <p className="text-slate-300 text-base lg:text-lg font-medium leading-relaxed mb-10 text-left">Dedicated to elite partner success and lifecycle excellence, ensuring every client achieves untouchable market dominance.</p>
-                  <Link to="/about/akhand-pratap-singh" className="mt-auto group/link flex items-center gap-2 text-[10px] font-black text-[#7c3bed] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
+                  <Link to="/about/akhand-pratap-singh" className="mt-auto group/link flex items-center gap-2 text-xs font-black text-[#7c3bed] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
                     LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
                   </Link>
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#7c3bed]/10 blur-3xl rounded-full -z-10"></div>
                 </div>
               </div>
             </div>
