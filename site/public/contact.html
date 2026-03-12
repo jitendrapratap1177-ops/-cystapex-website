@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CYST APEX | Contact Inquiry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7f13ec",
+                        "seablue": "#00d2ff",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#05080F",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header / Navigation -->
+<header class="fixed top-0 left-0 right-0 z-50 p-4">
+<nav class="mx-auto max-w-md bg-white/5 dark:bg-primary/5 backdrop-blur-xl border border-white/10 dark:border-primary/20 rounded-full px-6 py-3 flex items-center justify-between shadow-2xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">polymer</span>
+<span class="font-extrabold tracking-tighter text-lg bg-clip-text text-transparent bg-gradient-to-r from-primary to-seablue">CYST APEX</span>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-sm font-semibold text-slate-400 hover:text-white transition-colors" href="#">Home</a>
+<a class="bg-gradient-to-r from-primary to-seablue px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-lg shadow-primary/20" href="#">Contact</a>
+</div>
+</nav>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 pt-24 pb-32 px-6">
+<div class="max-w-md mx-auto">
+<!-- Hero Title Section -->
+<section class="mb-12">
+<h1 class="text-5xl font-black tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-br from-[#FFD700] via-primary to-seablue mb-8">
+                    Let's Engineer Your Apex.
+                </h1>
+<div class="space-y-6">
+<div class="group">
+<p class="text-[10px] font-bold tracking-[0.2em] text-primary/60 uppercase mb-1">Email</p>
+<p class="text-lg font-semibold text-slate-300 group-hover:text-primary transition-colors">growth@cystapex.com</p>
+</div>
+<div class="group">
+<p class="text-[10px] font-bold tracking-[0.2em] text-primary/60 uppercase mb-1">Phone</p>
+<p class="text-lg font-semibold text-slate-300 group-hover:text-primary transition-colors">+1 (555) 000-APEX</p>
+</div>
+<div class="group border-b border-primary/10 pb-6">
+<p class="text-[10px] font-bold tracking-[0.2em] text-primary/60 uppercase mb-1">Location</p>
+<p class="text-lg font-semibold text-slate-300 group-hover:text-primary transition-colors">Silicon Valley, CA</p>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="relative">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 blur-[80px] rounded-full"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-seablue/10 blur-[80px] rounded-full"></div>
+<div class="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-2xl p-8 shadow-2xl">
+<h2 class="text-2xl font-bold mb-6 text-white">Inquiry Form</h2>
+<form action="#" class="space-y-5">
+<div class="space-y-2">
+<label class="text-xs font-medium text-slate-400 ml-1">Full Name</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:ring-2 focus:ring-seablue/50 focus:border-seablue outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-slate-400 ml-1">Work Email</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:ring-2 focus:ring-seablue/50 focus:border-seablue outline-none transition-all" placeholder="john@company.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-slate-400 ml-1">Company Name</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:ring-2 focus:ring-seablue/50 focus:border-seablue outline-none transition-all" placeholder="Apex Labs" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-slate-400 ml-1">Monthly Revenue</label>
+<div class="relative">
+<select class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white appearance-none focus:ring-2 focus:ring-seablue/50 focus:border-seablue outline-none transition-all">
+<option class="bg-background-dark">$0 - $10k</option>
+<option class="bg-background-dark">$10k - $50k</option>
+<option class="bg-background-dark">$50k - $250k</option>
+<option class="bg-background-dark">$250k+</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-slate-400 ml-1">How can we scale your brand?</label>
+<textarea class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-slate-600 focus:ring-2 focus:ring-seablue/50 focus:border-seablue outline-none transition-all resize-none" placeholder="Tell us about your goals..." rows="4"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-seablue hover:opacity-90 py-4 rounded-full text-white font-bold text-lg shadow-xl shadow-primary/25 transition-all active:scale-[0.98] mt-4 flex items-center justify-center gap-2" type="submit">
+<span>Submit Inquiry</span>
+<span class="material-symbols-outlined">rocket_launch</span>
+</button>
+</form>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer Area -->
+<footer class="bg-[#030609] pt-12 pb-24 border-t border-white/5">
+<div class="max-w-md mx-auto px-6 text-center">
+<div class="flex items-center justify-center gap-2 mb-6 opacity-50">
+<span class="material-symbols-outlined text-primary">polymer</span>
+<span class="font-extrabold tracking-tighter text-lg text-white">CYST APEX</span>
+</div>
+<div class="flex justify-center gap-8 mb-8 text-sm font-medium text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Case Studies</a>
+</div>
+<p class="text-xs text-slate-600">© 2024 CYST APEX GROWTH AGENCY. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- Bottom Navigation Bar (Mobile Native Style) -->
+<div class="fixed bottom-0 left-0 right-0 z-50 flex items-center bg-background-dark/80 backdrop-blur-md border-t border-white/5 px-6 pb-6 pt-3 justify-between">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">house</span>
+<p class="text-[10px] font-medium uppercase tracking-wider">Home</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">rocket_launch</span>
+<p class="text-[10px] font-medium uppercase tracking-wider">Services</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<p class="text-[10px] font-medium uppercase tracking-wider">Results</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1">mail</span>
+<p class="text-[10px] font-medium uppercase tracking-wider">Contact</p>
+</a>
+</div>
+</body></html>
