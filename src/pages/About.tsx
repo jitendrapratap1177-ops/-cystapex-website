@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function About() {
@@ -24,10 +25,10 @@ export default function About() {
 
       {/* Mission & Core Values */}
       <section className="py-24 lg:py-40 px-6 lg:px-8 border-y border-white/5 relative">
-        <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-20 lg:gap-32 relative z-10 text-left">
+        <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-20 lg:gap-32 relative z-10">
           <div className="space-y-10 lg:space-y-12">
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-5xl font-extrabold text-white tracking-tight text-left">Our Mission</h2>
+            <div className="space-y-6 text-left">
+              <h2 className="text-3xl lg:text-5xl font-extrabold text-white tracking-tight">Our Mission</h2>
               <div className="w-20 h-1.5 bg-[#22D3EE] rounded-full"></div>
             </div>
             <p className="text-xl lg:text-2xl text-slate-300 leading-relaxed font-light text-left">
@@ -44,8 +45,8 @@ export default function About() {
             </div>
           </div>
           <div className="space-y-10 lg:space-y-12">
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-5xl font-extrabold text-white tracking-tight text-left">Core Values</h2>
+            <div className="space-y-6 text-left">
+              <h2 className="text-3xl lg:text-5xl font-extrabold text-white tracking-tight">Core Values</h2>
               <div className="w-20 h-1.5 bg-[#7c3bed] rounded-full"></div>
             </div>
             <div className="space-y-8">
@@ -63,7 +64,7 @@ export default function About() {
                     <div className="w-full h-1.5 bg-white/5 rounded-full mb-4 overflow-hidden">
                       <div className="h-full bg-[#7c3bed] w-full animate-pulse"></div>
                     </div>
-                    <p className="text-slate-400 text-sm">Brutal honesty at every stage. We share the data, the wins, and the pivots with zero filter.</p>
+                    <p className="text-slate-400 text-sm italic">Brutal honesty at every stage. We share the data, the wins, and the pivots with zero filter.</p>
                   </div>
                 </div>
               </div>
@@ -81,7 +82,7 @@ export default function About() {
                     <div className="w-full h-1.5 bg-white/5 rounded-full mb-4 overflow-hidden">
                       <div className="h-full bg-[#1E90D4] w-[99.9%]"></div>
                     </div>
-                    <p className="text-slate-400 text-sm">Marketing is a science. We operate with surgical accuracy to ensure zero wastage of capital.</p>
+                    <p className="text-slate-400 text-sm italic">Marketing is a science. We operate with surgical accuracy to ensure zero wastage of capital.</p>
                   </div>
                 </div>
               </div>
@@ -134,7 +135,7 @@ export default function About() {
             <div className="flex justify-between items-center mb-8">
               <div className="text-left">
                 <h4 className="text-xl font-bold text-white">Growth Velocity Index</h4>
-                <p className="text-slate-500 text-sm">Cumulative performance tracking (2020-2024)</p>
+                <p className="text-slate-500 text-sm italic">Cumulative performance tracking (2020-2024)</p>
               </div>
               <div className="flex gap-4">
                 <div className="flex items-center gap-2">
@@ -163,69 +164,74 @@ export default function About() {
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(rgba(30, 144, 212, 0.15) 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
       </section>
 
-      <div className="grid lg:grid-cols-3 gap-12">
-        {/* Aniket Singh */}
-        <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#10B981]/20 to-transparent hover:from-[#10B981]/40 transition-all duration-500">
-          <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
-            <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-8">
-              <span className="inline-block self-start bg-[#10B981]/20 text-[#10B981] border border-[#10B981]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">TECH MASTER</span>
-              <h4 className="text-4xl font-black text-white mb-6">Aniket Singh</h4>
-              <p className="text-slate-300 text-lg font-medium leading-relaxed mb-12">Chief Architect of the proprietary CYST growth engine, specializing in scalable infrastructure and advanced data algorithms.</p>
-              <Link to="/about/aniket-singh" className="mt-auto group/link flex items-center gap-2 text-xs font-black text-[#10B981] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
-                LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
-              </Link>
+      {/* The Founding Elite */}
+      <section className="py-24 lg:py-40 px-6 lg:px-8 bg-[#05080F]">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="text-center mb-16 lg:mb-24">
+            <span className="text-[#7c3bed] font-black uppercase tracking-[0.4em] text-[10px] mb-6 inline-block">The Founding Elite</span>
+            <h2 className="text-4xl lg:text-6xl font-extrabold text-white mb-8 tracking-tighter text-center">Architects of Domination</h2>
+            <p className="text-slate-400 text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto text-center">The core trinity driving exponential results through technology, sales, and client mastery.</p>
+          </div>
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            {/* Aniket Singh */}
+            <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#10B981]/20 to-transparent hover:from-[#10B981]/40 transition-all duration-500">
+              <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
+                <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
+                  <span className="inline-block self-start bg-[#10B981]/20 text-[#10B981] border border-[#10B981]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">TECH MASTER</span>
+                  <h4 className="text-3xl lg:text-4xl font-black text-white mb-6">Aniket Singh</h4>
+                  <p className="text-slate-300 text-base lg:text-lg font-medium leading-relaxed mb-10 text-left">Chief Architect of the proprietary CYST growth engine, specializing in scalable infrastructure and advanced data algorithms.</p>
+                  <Link to="/about/aniket-singh" className="mt-auto group/link flex items-center gap-2 text-[10px] font-black text-[#10B981] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
+                    LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#10B981]/5 blur-3xl rounded-full"></div>
+            {/* Shantanu Singh */}
+            <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#1E90D4]/20 to-transparent hover:from-[#1E90D4]/40 transition-all duration-500">
+              <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
+                <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
+                  <span className="inline-block self-start bg-[#1E90D4]/20 text-[#1E90D4] border border-[#1E90D4]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">SALES EXPERT</span>
+                  <h4 className="text-3xl lg:text-4xl font-black text-white mb-6">Shantanu Singh</h4>
+                  <p className="text-slate-300 text-base lg:text-lg font-medium leading-relaxed mb-10 text-left">Leader of high-ticket acquisition and strategic market expansion, driving revenue velocity through psychological sales engineering.</p>
+                  <Link to="/about/shantanu-singh" className="mt-auto group/link flex items-center gap-2 text-[10px] font-black text-[#1E90D4] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
+                    LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Akhand Pratap Singh */}
+            <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#7c3bed]/20 to-transparent hover:from-[#7c3bed]/40 transition-all duration-500">
+              <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
+                <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-6 lg:px-8">
+                  <span className="inline-block self-start bg-[#7c3bed]/20 text-[#7c3bed] border border-[#7c3bed]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">CLIENT MANAGEMENT</span>
+                  <h4 className="text-3xl lg:text-4xl font-black text-white mb-6">Akhand Pratap Singh</h4>
+                  <p className="text-slate-300 text-base lg:text-lg font-medium leading-relaxed mb-10 text-left">Dedicated to elite partner success and lifecycle excellence, ensuring every client achieves untouchable market dominance.</p>
+                  <Link to="/about/akhand-pratap-singh" className="mt-auto group/link flex items-center gap-2 text-[10px] font-black text-[#7c3bed] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
+                    LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        {/* Shantanu Singh */}
-        <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#1E90D4]/20 to-transparent hover:from-[#1E90D4]/40 transition-all duration-500">
-          <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
-            <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-8">
-              <span className="inline-block self-start bg-[#1E90D4]/20 text-[#1E90D4] border border-[#1E90D4]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">SALES EXPERT</span>
-              <h4 className="text-4xl font-black text-white mb-6">Shantanu Singh</h4>
-              <p className="text-slate-300 text-lg font-medium leading-relaxed mb-12">Leader of high-ticket acquisition and strategic market expansion, driving revenue velocity through psychological sales engineering.</p>
-              <Link to="/about/shantanu-singh" className="mt-auto group/link flex items-center gap-2 text-xs font-black text-[#1E90D4] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
-                LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
-              </Link>
-            </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#1E90D4]/5 blur-3xl rounded-full"></div>
-          </div>
-        </div>
-        {/* Akhand Pratap Singh */}
-        <div className="group relative p-1 rounded-[2.5rem] bg-gradient-to-br from-[#7c3bed]/20 to-transparent hover:from-[#7c3bed]/40 transition-all duration-500">
-          <div className="bg-[#0A1628] rounded-[2.3rem] overflow-hidden bg-white/[0.03] backdrop-blur-xl border border-white/10 h-full flex flex-col">
-            <div className="aspect-[4/5] relative overflow-hidden m-4 rounded-[1.8rem] bg-white/5 border border-white/5 flex flex-col justify-center px-8">
-              <span className="inline-block self-start bg-[#7c3bed]/20 text-[#7c3bed] border border-[#7c3bed]/30 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">CLIENT MANAGEMENT</span>
-              <h4 className="text-4xl font-black text-white mb-6">Akhand Pratap Singh</h4>
-              <p className="text-slate-300 text-lg font-medium leading-relaxed mb-12">Dedicated to elite partner success and lifecycle excellence, ensuring every client achieves untouchable market dominance.</p>
-              <Link to="/about/akhand-pratap-singh" className="mt-auto group/link flex items-center gap-2 text-xs font-black text-[#7c3bed] tracking-[0.2em] hover:opacity-80 transition-all cursor-pointer">
-                LEARN MORE <span className="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
-              </Link>
-            </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#7c3bed]/5 blur-3xl rounded-full"></div>
-          </div>
-        </div>
-      </div>
-    </div >
-      </section >
+      </section>
 
-    {/* CTA Section */ }
-    < section className = "py-48 px-8 relative overflow-hidden" >
+      {/* CTA Section */}
+      <section className="py-32 lg:py-48 px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-[#020408]"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30" style={{
           background: 'radial-gradient(circle at 10% 20%, rgba(124, 59, 237, 0.15) 0%, transparent 40%), radial-gradient(circle at 90% 80%, rgba(13, 115, 119, 0.15) 0%, transparent 40%), radial-gradient(circle at 50% 50%, rgba(30, 144, 212, 0.1) 0%, transparent 60%)'
         }}></div>
         <div className="max-w-5xl mx-auto relative z-10 text-center">
-          <h2 className="text-6xl md:text-[84px] font-extrabold text-white mb-10 leading-[1] tracking-tighter">Ready to claim your place at the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7c3bed] to-[#1E90D4]">summit?</span></h2>
-          <p className="text-xl text-slate-400 mb-16 max-w-2xl mx-auto leading-relaxed">
+          <h2 className="text-4xl md:text-7xl lg:text-[84px] font-extrabold text-white mb-10 leading-[1.1] lg:leading-[1] tracking-tighter text-center">Ready to claim your place at the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7c3bed] to-[#1E90D4]">summit?</span></h2>
+          <p className="text-base lg:text-xl text-slate-400 mb-12 lg:mb-16 max-w-2xl mx-auto leading-relaxed text-center">
             We are highly selective. If your brand is engineered for aggressive expansion, the time is now.
           </p>
-          <Link to="/contact" className="inline-block bg-gradient-to-r from-[#7c3bed] to-[#1E90D4] px-20 py-8 rounded-full text-2xl font-black text-white shadow-[0_0_20px_rgba(124,59,237,0.3)] hover:shadow-[0_0_40px_rgba(124,59,237,0.6)] hover:scale-[1.02] transition-all">
+          <Link to="/contact" className="inline-block bg-gradient-to-r from-[#7c3bed] to-[#1E90D4] px-12 lg:px-20 py-6 lg:py-8 rounded-full text-xl lg:text-2xl font-black text-white shadow-[0_0_20px_rgba(124, 59, 237, 0.3)] hover:shadow-[0_0_40px_rgba(124, 59, 237, 0.6)] hover:scale-[1.02] transition-all">
             Grow Yourself
           </Link>
         </div>
-      </section >
+      </section>
     </>
   );
 }
